@@ -60,12 +60,12 @@ plugins:
 author:
   name   : "Murat Sever"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Software Developer, DSP Engineer, PhD Student with Search Scholarship, C++, Radio Amateur, Embedded Systems, GPU Acceleration, Nvidia Jetson, Drone Flyer, Kanun player."
+  bio    : "Software Developer, DSP Engineer, PhD Student with Search Grant, C++, Radio Amateur, Embedded Systems, GPU Acceleration, Nvidia Jetson, Drone Flyer, Kanun player."
   location: "Ankara, Turkey"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://etu.edu.tr"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
