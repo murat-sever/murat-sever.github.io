@@ -11,7 +11,7 @@ export default defineConfig({
 			//defaultColorScheme: 'dark',
 			defaultLocale: 'en', // Varsayılan dili İngilizce yapar			
       		locales: {
-        		en: {
+        		en: { 
           			label: 'English',
           			lang: 'en',
         		},
