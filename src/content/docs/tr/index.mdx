@@ -3,39 +3,45 @@ title: HaKi Projesine hoş geldiniz!
 description: Get started building your docs site with Starlight.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Murat Sever
-  #image:
-  #  file: ../../assets/houston.webp
-  actions:
-    - text: Hakkımda 
-      link: tr/aboutme/
-      icon: right-arrow
-   # - text: What they talk about?
-   #   link: https://starlight.astro.build
-   #   icon: external
-   #   variant: minimal
+  tagline: >
+    Ben bir Öğretim Görevlisi, Yazılım Geliştirici, DSP Mühendisi ve doktora
+    araştırmacısıyım; sinyal işleme, kablosuz haberleşme ve gömülü sistemlerin
+    kesişiminde çalışıyorum. Teori ile gerçek dünya arasındaki boşluğu kapatan
+    uygulamalı YTR eğitimleri tasarlıyor ve sunuyorum. Açık, modüler kurslar
+    aracılığıyla gerçek dünya sinyallerini sınıfa taşıyorum. İster üniversite
+    dersleri ister profesyonel mühendislik ekipleri için olsun, hedef hep aynı:
+    karmaşık haberleşme sistemlerini somut, uygulamalı ve hemen kullanılabilir kılmak.
 ---
 
 import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
 	<Card title="YTR ile Güçlendirilmiş Yenilikçi Laboratuvar Eğitimi" icon="laptop">
-		[TOBB ETÜ](https://etu.edu.tr/) Üniversitesinde **2022 Yaz** döneminden bugüne haberleşme sistemlerini YTR ile öğretiyoruz. Daha fazla bilgi için [ELE361L](https://ELE361L.github.io) adresini ziyaret edebilirsiniz. 
-	</Card>
-	<Card title="Introduction to Wireless Communications Using SDR and Python" icon="codePen">
-		This course offers a hands-on introduction to communication systems using SDR with a Python-based programming perspective. 	
-	</Card>
-	<Card title="Comprehensive Hands-on Telecommunications Course" icon="star">
-		This training course provides a comprehensive overview of mobile communications using SDR with a focus on practical aspects and applications. 
-	</Card>
-	<Card title="Tailored SDR Curriculum" icon="rocket">
-    		We design **custom Software-Defined Radio (SDR) training content** for groups, covering DSP, GNU 		Radio, Python, and wireless protocol implementation. Modules can be adapted for academic courses or professional workshops.
+	  ELE361L, Yazılım Tabanlı Radyolar ile açık ve moduler yapıda tasarlanmış bir laboratuvar dersi müfredatıdır. Öğrenciler derste AM hava bandı, dar bant ve geniş bant FM, ve ADS-B uçak sinyalleri gibi gerçek dünya sinyalleri üzerinden endüstri standardı araçlar kullanarak haberleşme sistemlerini öğrenirler. [TOBB ETÜ](https://etu.edu.tr/) Üniversitesinde **2022 Yaz** döneminden bugüne kullanılan ve kendini kanıtlamış olgun bir yapıdadır. 
 
-    <br/>
-    <LinkButton href="/contact/" variant="secondary" icon="email">
-      Discuss Your Needs
-    </LinkButton>
-    </Card>
+	  <br/>
+  		<LinkButton href="https://ele361l.github.io" variant="secondary" icon="external">
+		    Visit Course Site
+		  </LinkButton>
+	</Card>
+	<Card title="YTR ve Python ile Kablosuz Haberleşmeye Giriş" icon="codePen">
+  		Yazılım Tabanlı Radyo ve Python kullanarak gerçek dünya sinyalleriyle çalışan uygulamalı bir kurs.
+	  <LinkButton href="/tr/courses/sdr-python-course/" variant="secondary" icon="right-arrow">
+		    Detaylar
+	  </LinkButton>
+	</Card>
+	<Card title="Kapsamlı Uygulamalı Haberleşme Eğitimi" icon="star">
+  RF temellerinden başlayarak mobil ağlara kadar uzanan ve Yazılım Tabanlı Radyo uygulamalı, kapsamlı haberleşme eğitimi.
+  <LinkButton href="/tr/courses/telecom-course/" variant="secondary" icon="right-arrow">
+    Detaylar
+  </LinkButton>
+</Card>
+<Card title="Özelleşmiş YTR Eğitimi" icon="rocket">
+  Gruplar için DSP, GNU Radio, Python ve kablosuz protokol uygulamalarını kapsayan **özel Yazılım Tabanlı Radyo (YTR) eğitim içerikleri** tasarlıyoruz. Modüller akademik dersler veya profesyonel atölye çalışmaları için uyarlanabilir.
+  <br/>
+  <LinkButton href="/tr/contact/" variant="secondary" icon="email">
+    İhtiyaçlarınızı Görüşelim
+  </LinkButton>
+</Card>
   </CardGrid>
-## Daha fazlası
 

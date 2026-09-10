@@ -1,0 +1,118 @@
+---
+title: Comprehensive Hands-on Telecommunications Course
+description: A comprehensive hands-on course on modern telecommunications — from RF fundamentals and DSP to GSM, LTE, and 5G networks.
+---
+
+import { Card, CardGrid, Aside } from '@astrojs/starlight/components';
+
+This classroom training course provides a comprehensive overview of mobile communications — from RF fundamentals and digital signal processing all the way to building real 2G, 3G, 4G, and 5G networks with an SDR and a PC. Topics are brought to life through live instructor-led demonstrations and hands-on exercises using **Software Defined Radios (SDR)**.
+
+<Aside type="tip">
+  No programming skills required. Basic computer usage is sufficient to attend this course.
+</Aside>
+
+## Course Highlights
+
+<CardGrid>
+  <Card title="End-to-End Coverage" icon="open-book">
+    From frequency bands and spectrum allocations to OFDM, spread spectrum, and full cellular network architecture (GSM through 5G).
+  </Card>
+  <Card title="Build Real Networks" icon="laptop">
+    Hands-on labs where participants build and analyse 2G (OpenBTS), 3G (UMTS), 4G (srsRAN), and 5G (OAI5G) networks using SDR hardware.
+  </Card>
+  <Card title="Real-World Tools" icon="setting">
+    Work with RTL-SDR, HackRF, GNU Radio, gqrx, SDRAngel, LTESniffer, kalibrate, gr-gsm, FlipperZero and more.
+  </Card>
+  <Card title="Flexible Schedule" icon="calendar">
+    30 hours over 5 days. Customizable to 4–10 days based on attendee background and needs.
+  </Card>
+</CardGrid>
+
+## What You Will Learn
+
+Upon completion, participants will have a solid understanding of:
+
+- **RF fundamentals** — frequency bands, spectrum allocations, radio architecture
+- **DSP concepts** — sampling, aliasing, Nyquist, digital filtering, multirate signal processing, FFT
+- **SDR concepts and architectures** — RTL-SDR, HackRF, GNU Radio toolkit
+- **Analog modulation** — CW, AM, NBFM, WBFM
+- **Digital modulation** — PAM, ASK, PSK, QAM, OFDM, spread spectrum
+- **Wireless channel effects** — noise, multipath, Doppler shift, link budget, FEC
+- **Digital communications** — pulse shaping, synchronization, eye diagram, constellation diagram
+- **Cellular networks** — GSM, UMTS, LTE, 5G architectures and hands-on network building
+- **Security** — Replay Attack concepts and live demonstration with FlipperZero, URH, rtl_433
+
+## Course Topics
+
+<CardGrid>
+  <Card title="Getting Started & Signals" icon="radio">
+    - Frequency bands and spectrum allocations
+    - Analog & digital signals, complex numbers
+    - FFT, spectral leakage, windowing, zero padding
+    - GNU Radio introduction and hands-on signal exploration
+  </Card>
+  <Card title="Digital Signal Processing" icon="bars">
+    - Sampling, aliasing, Nyquist theorem, quantization
+    - LTI systems, convolution, digital filtering, FIR filters
+    - Resampling and multirate signal processing
+    - Hands-on: stereo sound and Capture the Flag (CTF)
+  </Card>
+  <Card title="Radio & SDR Fundamentals" icon="setting">
+    - Basic radio architecture, modulation/demodulation
+    - RF system components
+    - SDR concepts, architectures, and key parameters
+    - Hands-on: RTL-SDR & HackRF, gqrx, SDRAngel, OpenWebRX
+  </Card>
+  <Card title="Modulation Schemes" icon="codePen">
+    - Analog: CW, AM, NBFM, WBFM
+    - Digital: PAM, ASK, PSK, QAM
+    - Hands-on demodulation examples (AM, LSB/USB, NBFM, WBFM, CW)
+    - End-to-end QPSK simulation in GNU Radio
+  </Card>
+  <Card title="Wireless Channel & OFDM" icon="star">
+    - Noise, multipath, Doppler shift, link budget, FEC
+    - Pulse shaping, matched filtering, synchronization
+    - Eye diagram, constellation diagram
+    - OFDM principles, transmitter & receiver implementation
+  </Card>
+  <Card title="Mobile Networks" icon="rocket">
+    - GSM (2G): architecture, GPRS/EDGE, kalibrate, gr-gsm, OpenBTS
+    - UMTS (3G): CDMA, OpenBTS-UMTS
+    - LTE (4G): OFDMA, EPC, LTESniffer, srsRAN
+    - 5G: NR, NSA/SA architectures, OAI5G
+  </Card>
+</CardGrid>
+
+## Hands-on Activities
+
+This course is packed with practical sessions:
+
+- RF "Hello World" with RTL-SDR
+- Signal exploration with GNU Radio
+- Stereo sound production and sound processing
+- RF spectrum viewing (fosphor) and painting (gr-paint)
+- Analog signal demodulation (AM, LSB/USB, NBFM, WBFM, CW)
+- End-to-end digital communication simulation (QPSK)
+- Capture the Signal (CTS) sessions
+- Replay Attack demo with FlipperZero, URH, rtl_433, GNU Radio
+- Building and analysing 2G, 3G, 4G, and 5G networks
+
+## Target Audience
+
+This course appeals to engineers from all disciplines. Computer scientists, programmers, and mechanical, automotive, and aerospace engineers — in addition to electrical and electronics engineers — will all benefit from this deep dive into modern telecommunications technology.
+
+## Course Format & Materials
+
+All hardware (RTL-SDR, HackRF, walkie-talkies, mobile phones, and other RF equipment) is provided. Materials include:
+
+- Lecture slides
+- GNU Radio flowgraphs
+- IQ recordings
+- Capture The Signal (CTS) sessions
+- Replay Attack demonstration
+
+## References
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)
+3. *Communication Systems Engineering with GNU Radio, A Hands-on Approach* — Jean-Michel Friedt, Hervé Boeglen

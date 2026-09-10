@@ -1,0 +1,95 @@
+---
+title: Introduction to Wireless Communications Using SDR and Python
+description: A hands-on course on wireless communications using Software Defined Radio and Python.
+---
+
+import { Card, CardGrid, Badge, Aside } from '@astrojs/starlight/components';
+
+Wireless communications have become an indispensable part of our lives — but how does it all actually work? This hands-on course lets you experience it first-hand using **Software Defined Radio (SDR)** and **Python**, working with real-world signals in a practical, engaging environment.
+
+<Aside type="tip">
+  No prior RF experience needed. Basic programming knowledge and general Python familiarity are sufficient to get started.
+</Aside>
+
+## Course Highlights
+
+<CardGrid>
+  <Card title="Real-World Signals" icon="radio">
+    Work with live signals: AM airband, broadcast FM (mono/stereo/RDS), NBFM repeaters, and ADS-B transponders from aircraft.
+  </Card>
+  <Card title="Software-Based" icon="laptop">
+    All processing done in software using **GNU Radio**, **Python**, and libraries like NumPy, SciPy, and Matplotlib inside Jupyter Notebooks.
+  </Card>
+  <Card title="Hands-On Format" icon="puzzle">
+    Live demonstrations, exercises, IQ record analysis, and Capture The Signal (CTS) sessions throughout the course.
+  </Card>
+  <Card title="Flexible Schedule" icon="calendar">
+    18 hours total, delivered over 3 days. Schedule is customizable based on attendee experience and needs.
+  </Card>
+</CardGrid>
+
+## What You Will Learn
+
+By the end of this course, attendees will have a solid intuitive understanding of:
+
+- **DSP fundamentals** — sampling, aliasing, digital filtering, multirate signal processing, frequency domain concepts
+- **SDR concepts** — architectures, RTL-SDR hardware, general-purpose SDR applications
+- **Analog modulation** — AM, NBFM, WBFM demodulation including stereo, RDS, and subchannels
+- **Digital modulation** — QPSK, constellation diagrams, pulse shaping, synchronization, decoding
+- **ADS-B decoding** — extracting flight number, altitude, position, and speed from aircraft signals
+- **GNU Radio** — flowgraph creation, blocks, data types, scheduler
+- **Python DSP libraries** — NumPy, SciPy, Matplotlib, IQ file formats, spectrum monitoring
+
+## Course Topics
+
+<CardGrid>
+  <Card title="Communication Systems & GNU Radio" icon="setting">
+    - Introduction to communication systems
+    - GNU Radio fundamentals (blocks, data types, scheduler)
+    - Flow graph creation
+  </Card>
+  <Card title="Sound Card & DSP Basics" icon="bars">
+    - Basic filtering (types, cutoff, taps, transition bandwidth)
+    - Nyquist theorem, aliasing, decimation
+    - Stereo sound and DTMF tone generation
+  </Card>
+  <Card title="Python & SDR Introduction" icon="codePen">
+    - FFT, frequency resolution, negative frequencies
+    - SDR architectures and RTL-SDR
+    - Spectrum monitoring with gqrx
+  </Card>
+  <Card title="Analog Modulation" icon="forward-slash">
+    - AM: HF band, airband, IQ record formats
+    - NBFM: VHF, handheld radios, FM repeaters, CTCSS
+    - WBFM: mono/stereo, pilot tones, RDS, subchannels
+  </Card>
+  <Card title="Digital Modulation" icon="star">
+    - QPSK: constellation diagram, pulse shaping
+    - Carrier and phase synchronization
+    - Decoding algorithms
+  </Card>
+  <Card title="ADS-B Signals" icon="rocket">
+    - Preamble, Manchester encoding, thresholding
+    - Flight data extraction (altitude, position, speed)
+    - Analysis using SDR Angel
+  </Card>
+</CardGrid>
+
+## Target Audience
+
+This course is designed for engineers, professionals, students, and academics interested in signal processing or wireless communications. Whether you are new to the field or an experienced DSP engineer looking for a fresh, practical perspective — this course offers immediate, applicable value.
+
+## Course Format & Materials
+
+All hardware (RTL-SDR) is provided. Materials include:
+
+- Jupyter Notebooks
+- GNU Radio flowgraphs
+- Slides and walkthrough examples
+- IQ recordings
+- Capture The Signal (CTS) sessions
+
+## References
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)

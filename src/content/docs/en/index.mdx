@@ -3,17 +3,15 @@ title: Welcome to HaKi Project!
 description: Get started building your docs site with Starlight.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: Murat Sever
-  #image:
-  #  file: ../../assets/houston.webp
+  tagline: >
+    I am a Lecturer, Software Developer, DSP Engineer, and PhD researcher working at the
+    intersection of signal processing, wireless communications, and embedded
+    systems. I design and deliver hands-on SDR training that bridges the gap
+    between theory and the real world. Through open, modular courses, I bring real-world signals into the classroom. Whether for university courses or professional engineering teams, the goal is always the same: make complex communication systems tangible, hands-on, and immediately useful.
   actions:
-    - text: About me 
+    - text: About me
       link: en/aboutme/
       icon: right-arrow
-   # - text: What they talk about?
-   #   link: https://starlight.astro.build
-   #   icon: external
-   #   variant: minimal
 ---
 
 import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
@@ -21,26 +19,31 @@ import PythonIcon from '../../../assets/python-logo-only.svg';
 
 <CardGrid stagger>
 	<Card title="SDR-Powered Education" icon="laptop">
-	
-		Explore our SDR-based [ELE361L](https://ELE361L.github.io) course at [TOBB ETU](https://etu.edu.tr/). 
+	  ELE361L is an open, modular course built around **Software Defined Radios** at [TOBB ETU](https://etu.edu.tr/). Students work with real-world signals — AM airband, narrwoband and	broadcast FM, and ADS-B aircraft transponders — using industry-standard tools. Fully software-based and remote-ready, with a strong focus on professional software development skills. 
+
+	  <br/>
+  		<LinkButton href="https://ele361l.github.io" variant="secondary" icon="external">
+		    Visit Course Site
+		  </LinkButton>
 	</Card>
-	
 	<Card title="Introduction to Wireless Communications Using SDR and Python" icon="codePen">
-		This course offers a hands-on introduction to communication systems using SDR with a Python-based programming perspective. 	
-	</Card>
-	
+		  Hands-on course using SDR and Python programming perspective to explore real-world signals.
+  		<LinkButton href="/en/courses/sdr-python-course/" variant="secondary" icon="right-arrow">
+		    Learn More
+		  </LinkButton>
+	</Card>	
 	<Card title="Comprehensive Hands-on Telecommunications Course" icon="star">
-		This training course provides a comprehensive overview of mobile communications using SDR with a focus on practical aspects and applications. 
-	</Card>
-	
+  This training course provides a comprehensive overview of mobile communications using SDR with a focus on practical aspects and applications. 
+  <LinkButton href="/en/courses/telecom-course/" variant="secondary" icon="right-arrow">
+    Learn More
+  </LinkButton>
+</Card>
 	<Card title="Tailored SDR Training" icon="rocket">
-    		We design **custom Software-Defined Radio (SDR) training content** for groups, covering DSP, GNU 		Radio, Python, and wireless protocol implementation. Modules can be adapted for academic courses or professional workshops.
+  We design **custom Software-Defined Radio (SDR) training content** for groups, covering DSP, GNU Radio, Python, and wireless protocol implementation. Modules can be adapted for academic courses or professional workshops.
+  <br/>
+  <LinkButton href="/en/contact/" variant="secondary" icon="email">
+    Discuss Your Needs
+  </LinkButton>
+</Card>	
 
-    <br/>
-    <LinkButton href="/contact/" variant="secondary" icon="email">
-      Discuss Your Needs
-    </LinkButton>
-  </Card>
 </CardGrid>
-## Want to learn more?
-

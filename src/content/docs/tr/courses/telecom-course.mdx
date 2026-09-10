@@ -1,0 +1,118 @@
+---
+title: Kapsamlı Uygulamalı Haberleşme Eğitimi
+description: RF temellerinden DSP'ye, analog ve sayısal modülasyondan GSM, LTE ve 5G ağlarına kadar kapsamlı bir haberleşme eğitimi.
+---
+
+import { Card, CardGrid, Aside } from '@astrojs/starlight/components';
+
+Bu eğitimde kablosuz haberleşme, **Yazılım Tabanlı Radyolar (YTR)** kullanılarak A'dan Z'ye uygulamalı biçimde ele alınmaktadır. Radyo frekansı temellerinden sayısal sinyal işlemeye, analog ve sayısal modülasyondan mobil şebekelere kadar haberleşme sistemlerinin arkasındaki teknoloji, yalnızca teorik olarak değil canlı gösterimler ve dene-yap uygulamalarıyla deneyimlenerek öğretilmektedir.
+
+<Aside type="tip">
+  Temel bilgisayar kullanım bilgisi yeterlidir. Herhangi bir kodlama becerisine gerek duyulmaz.
+</Aside>
+
+## Eğitimin Öne Çıkan Özellikleri
+
+<CardGrid>
+  <Card title="Uçtan Uca Kapsam" icon="open-book">
+    Frekans bantları ve spektrum tahsislerinden OFDM, spektrum yayma ve tam hücresel ağ mimarisine (GSM'den 5G'ye) kadar kapsamlı içerik.
+  </Card>
+  <Card title="Gerçek Ağ Kurulumu" icon="laptop">
+    2G (OpenBTS), 3G (UMTS), 4G (srsRAN) ve 5G (OAI5G) ağlarını YTR donanımıyla kurma ve analiz etme uygulamaları.
+  </Card>
+  <Card title="Gerçek Dünya Araçları" icon="setting">
+    RTL-SDR, HackRF, GNU Radio, gqrx, SDRAngel, LTESniffer, kalibrate, gr-gsm, FlipperZero ve daha fazlasıyla uygulamalı çalışma.
+  </Card>
+  <Card title="Esnek Program" icon="calendar">
+    30 saat, 5 gün olarak planlanmıştır. Katılımcıların ihtiyaç ve deneyimlerine göre 4–10 gün arasında özelleştirilebilir.
+  </Card>
+</CardGrid>
+
+## Eğitim Kazanımları
+
+Eğitimi tamamladığınızda aşağıdaki konularda geniş bir bakış açısına sahip olacaksınız:
+
+- **RF temelleri** — frekans bantları, spektrum tahsisleri, radyo mimarisi
+- **Temel DSP kavramları** — örnekleme, aliasing, Nyquist, sayısal filtreleme, çok hızlı sinyal işleme, FFT
+- **YTR kavramları ve mimarileri** — RTL-SDR, HackRF, GNU Radio araç seti
+- **Analog modülasyon** — CW, AM, NBFM, WBFM
+- **Sayısal modülasyon** — PAM, ASK, PSK, QAM, OFDM, spektrum yayma teknikleri
+- **Kablosuz kanal etkileri** — gürültü, çok yollu etki, Doppler kayması, bağlantı bütçesi, FEC
+- **Sayısal haberleşme** — darbe şekillendirme, senkronizasyon, göz diyagramı, takımyıldız diyagramı
+- **Hücresel ağlar** — GSM, UMTS, LTE, 5G mimarileri ve uygulamalı ağ kurulumu
+- **Güvenlik** — Geri Oynatım Saldırısı kavramı ve FlipperZero, URH, rtl_433 ile canlı demo
+
+## Eğitim İçeriği
+
+<CardGrid>
+  <Card title="Başlangıç & Sinyaller" icon="radio">
+    - Frekans bantları ve spektrum tahsisleri
+    - Analog ve sayısal sinyaller, karmaşık sayılar
+    - FFT, spektral kaçak, pencerelendirme, sıfır dolgusu
+    - GNU Radio tanıtımı ve sinyal keşfi uygulaması
+  </Card>
+  <Card title="Sayısal Sinyal İşleme" icon="bars">
+    - Örnekleme, aliasing, Nyquist teoremi, nicemlendirme
+    - LTI sistemler, evrişim, sayısal filtreleme, FIR filtreler
+    - Yeniden örnekleme ve çok hızlı sinyal işleme
+    - Uygulama: Stereo ses üretimi ve Capture the Flag (CTF)
+  </Card>
+  <Card title="Radyo & YTR Temelleri" icon="setting">
+    - Temel radyo mimarisi, modülasyon/demodülasyon
+    - RF sistem bileşenleri
+    - YTR kavramları, mimarileri ve anahtar parametreler
+    - Uygulama: RTL-SDR & HackRF, gqrx, SDRAngel, OpenWebRX
+  </Card>
+  <Card title="Modülasyon Teknikleri" icon="codePen">
+    - Analog: CW, AM, NBFM, WBFM
+    - Sayısal: PAM, ASK, PSK, QAM
+    - Analog sinyal demodülasyon örnekleri (AM, LSB/USB, NBFM, WBFM, CW)
+    - GNU Radio ile uçtan uca QPSK simülasyonu
+  </Card>
+  <Card title="Kablosuz Kanal & OFDM" icon="star">
+    - Gürültü, çok yollu etki, Doppler kayması, bağlantı bütçesi, FEC
+    - Darbe şekillendirme, eşleşmiş filtreleme, senkronizasyon
+    - Göz diyagramı, takımyıldız diyagramı
+    - OFDM ilkeleri, verici ve alıcı uygulaması
+  </Card>
+  <Card title="Mobil Ağlar" icon="rocket">
+    - GSM (2G): mimari, GPRS/EDGE, kalibrate, gr-gsm, OpenBTS
+    - UMTS (3G): CDMA, OpenBTS-UMTS
+    - LTE (4G): OFDMA, EPC, LTESniffer, srsRAN
+    - 5G: NR, NSA/SA mimarileri, OAI5G
+  </Card>
+</CardGrid>
+
+## Uygulamalı Çalışmalar
+
+Eğitim boyunca gerçekleştirilecek uygulamalı aktiviteler:
+
+- RTL-SDR ile RF "Hello World"
+- GNU Radio ile sinyal keşfi
+- Stereo ses üretimi ve ses işleme
+- RF spektrum görüntüleme (fosphor) ve çizimi (gr-paint)
+- Analog sinyal demodülasyonu (AM, LSB/USB, NBFM, WBFM, CW)
+- Uçtan uca sayısal haberleşme sistemi simülasyonu (QPSK)
+- Capture the Signal (CTS) oturumları
+- FlipperZero, URH, rtl_433, GNU Radio ile Geri Oynatım Saldırısı demosu
+- 2G, 3G, 4G ve 5G ağlarının kurulumu ve analizi
+
+## Hedef Kitle
+
+Bu eğitim tüm disiplinlerden mühendisler için uygundur. Elektrik-Elektronik mühendislerinin yanı sıra bilgisayar, makine, otomotiv ve havacılık mühendisleri de bu eğitime katılarak modern haberleşme teknolojileri hakkında kapsamlı bilgi ve uygulama becerisi kazanabilirler.
+
+## Eğitim Metodolojisi ve Materyaller
+
+Eğitim süresince gerekli tüm donanım (RTL-SDR, HackRF, telsiz, garaj kapısı açıcısı, cep telefonları) sağlanır. Kurulum bilgisi eğitim öncesinde iletilir. Eğitim materyalleri şunları içerir:
+
+- Sunum dosyaları
+- GNU Radio akış diyagramları
+- IQ kayıtları
+- Capture The Signal (CTS) oturumları
+- Geri Oynatım Saldırısı demosu
+
+## Dış Kaynaklar
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)
+3. *Communication Systems Engineering with GNU Radio, A Hands-on Approach* — Jean-Michel Friedt, Hervé Boeglen

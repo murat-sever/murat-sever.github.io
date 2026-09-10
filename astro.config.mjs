@@ -20,7 +20,11 @@ export default defineConfig({
           			lang: 'tr',
         		},
         	},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/murat-sever' }],
+			social: [
+  { icon: 'github', label: 'GitHub', href: 'https://github.com/murat-sever' },
+  { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/murat-sever-11980727/' },
+  { icon: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/' },
+],
 			sidebar: [
 				{
 					label: 'Guides',

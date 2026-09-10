@@ -1,0 +1,95 @@
+---
+title: SDR ve Python ile Kablosuz Haberleşmeye Giriş
+description: Yazılım Tanımlı Radyo ve Python kullanarak kablosuz haberleşmeyi uygulamalı olarak öğreten bir kurs.
+---
+
+import { Card, CardGrid, Aside } from '@astrojs/starlight/components';
+
+Kablosuz haberleşme hayatımızın vazgeçilmez bir parçası haline geldi — peki tüm bu iletişim nasıl gerçekleşiyor? Bu uygulamalı kurs, **Yazılım Tanımlı Radyo (SDR)** ve **Python** kullanarak gerçek dünya sinyalleriyle doğrudan çalışmanızı sağlar.
+
+<Aside type="tip">
+  Önceden RF deneyimi gerekmez. Temel programlama bilgisi ve genel Python aşinalığı başlamak için yeterlidir.
+</Aside>
+
+## Kursun Öne Çıkan Özellikleri
+
+<CardGrid>
+  <Card title="Gerçek Dünya Sinyalleri" icon="radio">
+    Canlı sinyallerle çalışın: AM hava bandı, yayın FM (mono/stereo/RDS), NBFM röle istasyonları ve uçaklardan gelen ADS-B transponder sinyalleri.
+  </Card>
+  <Card title="Yazılım Tabanlı" icon="laptop">
+    Tüm işlemler **GNU Radio**, **Python** ve Jupyter Notebook ortamında NumPy, SciPy ve Matplotlib kütüphaneleri kullanılarak gerçekleştirilir.
+  </Card>
+  <Card title="Uygulamalı Format" icon="puzzle">
+    Kurs boyunca canlı demolar, alıştırmalar, IQ kayıt analizleri ve Capture The Signal (CTS) oturumları yer almaktadır.
+  </Card>
+  <Card title="Esnek Program" icon="calendar">
+    Toplam 18 saat, 3 gün boyunca verilir. Program, katılımcıların deneyim ve ihtiyaçlarına göre özelleştirilebilir.
+  </Card>
+</CardGrid>
+
+## Neler Öğreneceksiniz?
+
+Bu kursun sonunda katılımcılar şu konularda güçlü bir sezgisel anlayış kazanacaktır:
+
+- **DSP temelleri** — örnekleme, örtüşme, sayısal filtreleme, çok hızlı sinyal işleme, frekans alanı kavramları
+- **SDR kavramları** — mimariler, RTL-SDR donanımı, genel amaçlı SDR uygulamaları
+- **Analog modülasyon** — AM, NBFM, WBFM demodülasyonu; stereo, RDS ve alt kanallar dahil
+- **Sayısal modülasyon** — QPSK, takımyıldızı diyagramları, darbe şekillendirme, senkronizasyon, kod çözme
+- **ADS-B kod çözme** — uçak sinyallerinden uçuş numarası, irtifa, konum ve hız bilgisi elde etme
+- **GNU Radio** — akış grafı oluşturma, bloklar, veri türleri, zamanlayıcı
+- **Python DSP kütüphaneleri** — NumPy, SciPy, Matplotlib, IQ dosya formatları, spektrum izleme
+
+## Kurs Konuları
+
+<CardGrid>
+  <Card title="Haberleşme Sistemleri & GNU Radio" icon="setting">
+    - Haberleşme sistemlerine giriş
+    - GNU Radio temelleri (bloklar, veri türleri, zamanlayıcı)
+    - Akış grafı oluşturma
+  </Card>
+  <Card title="Ses Kartı & DSP Temelleri" icon="bars">
+    - Temel filtreleme (türler, kesim frekansı, katsayılar, geçiş bandı)
+    - Nyquist teoremi, örtüşme, decimasyon
+    - Stereo ses ve DTMF ton üretimi
+  </Card>
+  <Card title="Python & SDR'a Giriş" icon="codePen">
+    - FFT, frekans çözünürlüğü, negatif frekanslar
+    - SDR mimarileri ve RTL-SDR
+    - gqrx ile spektrum izleme
+  </Card>
+  <Card title="Analog Modülasyon" icon="forward-slash">
+    - AM: KF bandı, hava bandı, IQ kayıt formatları
+    - NBFM: VHF, el telsizleri, FM röleleri, CTCSS
+    - WBFM: mono/stereo, pilot tonlar, RDS, alt kanallar
+  </Card>
+  <Card title="Sayısal Modülasyon" icon="star">
+    - QPSK: takımyıldızı diyagramı, darbe şekillendirme
+    - Taşıyıcı ve faz senkronizasyonu
+    - Kod çözme algoritmaları
+  </Card>
+  <Card title="ADS-B Sinyalleri" icon="rocket">
+    - Önsöz, Manchester kodlama, eşikleme
+    - Uçuş verisi çıkarımı (irtifa, konum, hız)
+    - SDR Angel ile analiz
+  </Card>
+</CardGrid>
+
+## Hedef Kitle
+
+Bu kurs; sinyal işleme veya kablosuz haberleşme uygulamalarıyla ilgilenen mühendisler, profesyoneller, öğrenciler ve akademisyenler için tasarlanmıştır. Alana yeni başlayanlar da deneyimli DSP mühendisleri de bu kurstan pratik ve anında uygulanabilir kazanımlar elde edecektir.
+
+## Kurs Formatı ve Materyaller
+
+Tüm donanım (RTL-SDR) temin edilir. Materyaller şunları içerir:
+
+- Jupyter Notebook'lar
+- GNU Radio akış grafları
+- Slaytlar ve adım adım örnekler
+- IQ kayıtları
+- Capture The Signal (CTS) oturumları
+
+## Kaynaklar
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)
