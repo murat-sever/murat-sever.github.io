@@ -1,0 +1,109 @@
+---
+title: GNU Radio ile Uygulamalı Haberleşme Sistemleri
+description: GNU Radio kullanarak gerçek dünya sinyal deneyleriyle kablosuz haberleşme üzerine uygulamalı bir eğitim.
+---
+
+import { Card, CardGrid, Badge, Aside } from '@astrojs/starlight/components';
+
+Bu eğitim, kablosuz haberleşmeyi GNU Radio aracını kullanarak gerçek ortamda deneyimleyerek eğlenceli ve ilgi çekici bir şekilde öğretmeyi hedeflemektedir.
+
+<Aside type="tip">
+  Önceden RF deneyimine gerek yoktur. Başlamak için temel bilgisayar kullanımı ve genel Python aşinalığı yeterlidir.
+</Aside>
+
+## Eğitimin Öne Çıkan Özellikleri
+
+<CardGrid>
+  <Card title="Gerçek Dünya Sinyalleri" icon="radio">
+    Canlı sinyallerle çalışın: yayın FM (mono/stereo/RDS), NBFM tekrarlayıcılar ve uçaklardan ADS-B transponder sinyalleri.
+  </Card>
+  <Card title="Yazılım Tabanlı" icon="laptop">
+    Tüm işlemler GNU Radio kullanılarak yazılım üzerinde gerçekleştirilir.
+  </Card>
+  <Card title="Uygulamalı Format" icon="puzzle">
+    Canlı gösterimler, alıştırmalar, IQ kayıt analizi ve Sinyal Yakalama Avı (CTS) oturumu.
+  </Card>
+  <Card title="Esnek Program" icon="calendar">
+    Program, katılımcıların deneyim ve ihtiyaçlarına göre özelleştirilebilir.
+  </Card>
+</CardGrid>
+
+## Eğitim Kazanımları
+
+Bu eğitimin sonunda katılımcılar aşağıdaki konularda sağlam bir kavrayışa sahip olacaktır:
+
+- **GNU Radio** — akış grafiği oluşturma, bloklar, veri türleri ve zamanlayıcı
+- **Sayısal Sinyal İşleme temelleri** — örnekleme, aliasing, sayısal filtreleme, seyreltme ve ara örnekleme
+- **YTR kavramları** — mimariler, RTL-SDR donanımı ve genel amaçlı YTR uygulamaları
+- **Analog modülasyon** — stereo, RDS ve alt kanallar dahil NBFM ve WBFM kip çözme
+- **Sayısal modülasyon** — QPSK simülasyonu, takımyıldızı diyagramları, taşıyıcı ve örnekleme zamanı senkronizasyonu
+- **ADS-B kod çözme** — uçak transponder sinyallerinden uçuş verisi çıkarımı
+
+
+## Eğitim Konuları
+
+<CardGrid>
+  <Card title="Haberleşme Sistemlerine ve YTR'ye Giriş" icon="setting">
+    - Haberleşme sistemlerine genel bakış
+    - Yazılım Tabanlı Radyo (YTR) kavramları ve mimarisi
+    - GNU Radio temelleri: bloklar, veri türleri, zamanlayıcı ve akış grafiği oluşturma
+  </Card>
+  <Card title="SSİ Temelleri I — Örnekleme ve Filtreleme" icon="bars">
+    - Örnekleme teoremi, aliasing ve Nyquist kriteri
+    - Sayısal filtre tasarımı: türler, kesim frekansı, katsayılar ve geçiş bant genişliği
+    - GNU Radio'da pratik filtreleme örnekleri
+  </Card>
+  <Card title="SSİ Temelleri II — Çok Hızlı İşleme ve Ses" icon="codePen">
+    - Seyreltme ve ara örnekleme
+    - Çok hızlı sinyal işleme kavramları
+    - Sayısal ses işleme örnekleri: stereo ses ve DTMF ton üretimi
+  </Card>
+  <Card title="GNU Radio ile YTR Donanımı Kullanımı" icon="laptop">
+    - RTL-SDR mimarisi ve arayüzü
+    - RTL-SDR'nin GNU Radio'ya bağlanması ve yapılandırılması
+    - Spektrum izleme ve sinyal keşfi
+  </Card>
+  <Card title="NBFM Kip Çözme" icon="forward-slash">
+    - GNU Radio ile dar bant FM kip çözme
+    - VHF bant özellikleri ve FM tekrarlayıcılar
+    - CTCSS tonları ve eşikleme (squelch) işlemi
+  </Card>
+  <Card title="WBFM Kip Çözme" icon="star">
+    - Geniş bant FM kip çözme: mono ve stereo
+    - Pilot ton tespiti ve stereo kod çözme
+    - RDS (Radyo Veri Sistemi) alt taşıyıcısı ve veri çıkarımı
+  </Card>
+  <Card title="Sayısal Haberleşme ve QPSK" icon="puzzle">
+    - Sayısal modülasyona giriş
+    - Gürültülü kanal ortamında QPSK simülasyonu
+    - Taşıyıcı senkronizasyonu ve örnekleme zamanı kurtarma
+  </Card>
+  <Card title="ADS-B Sinyal Kod Çözme" icon="rocket">
+    - ADS-B protokolüne genel bakış ve sinyal yapısı
+    - Önsöz tespiti ve Manchester kod çözme
+    - Uçuş verisi çıkarımı: uçak kimliği, irtifa, konum ve hız
+  </Card>
+  <Card title="Sinyal Yakalama Avı (CTS)" icon="magnifier">
+    - Canlı sinyal yakalama oturumu
+    - RF spektrumunda bilinmeyen sinyallerin tanımlanması
+    - Gerçek dünya iletimlerini çözmek için kurs becerilerinin uygulanması
+  </Card>
+</CardGrid>
+
+## Hedef Kitle
+
+Bu eğitim; sinyal işleme veya kablosuz haberleşmeye ilgi duyan mühendisler, profesyoneller, öğrenciler ve akademisyenler için tasarlanmıştır. Alana yeni başlıyor olun ya da taze ve pratik bir bakış açısı arayan deneyimli bir DSP mühendisi olun — bu eğitim anında uygulanabilir değer sunmaktadır.
+
+## Eğitim Formatı ve Materyaller
+
+Tüm donanım (RTL-SDR) sağlanmaktadır. Materyaller şunları içermektedir:
+
+- GNU Radio akış grafikleri
+- Slaytlar ve adım adım örnekler
+- IQ kayıtları
+- Sinyal Yakalama Avı (CTS) oturumu
+
+## Kaynaklar
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)

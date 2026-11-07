@@ -1,0 +1,108 @@
+---
+title: Hands-On Communication Systems with GNU Radio
+description: A hands-on course on wireless communications using GNU Radio with real-world signal experiments.
+---
+
+import { Card, CardGrid, Badge, Aside } from '@astrojs/starlight/components';
+
+This course aims to teach wireless communications in a fun and engaging way by experiencing it firsthand in a real-world environment using GNU Radio.
+
+<Aside type="tip">
+  No prior RF experience needed. Basic computer knowledge and general Python familiarity are sufficient to get started.
+</Aside>
+
+## Course Highlights
+
+<CardGrid>
+  <Card title="Real-World Signals" icon="radio">
+    Work with live signals: broadcast FM (mono/stereo/RDS), NBFM repeaters, and ADS-B transponders from aircraft.
+  </Card>
+  <Card title="Software-Based" icon="laptop">
+    All processing done in software using GNU Radio.
+  </Card>
+  <Card title="Hands-On Format" icon="puzzle">
+    Live demonstrations, exercises, IQ record analysis, and a Capture The Signal (CTS) sessions.
+  </Card>
+  <Card title="Flexible Schedule" icon="calendar">
+    Schedule is customizable based on attendee experience and needs.
+  </Card>
+</CardGrid>
+
+## What You Will Learn
+
+By the end of this course, attendees will have a solid intuitive understanding of:
+
+- **GNU Radio** — flowgraph creation, blocks, data types, and scheduler
+- **DSP fundamentals** — sampling, aliasing, digital filtering, decimation, and interpolation
+- **SDR concepts** — architectures, RTL-SDR hardware, and general-purpose SDR applications
+- **Analog modulation** — NBFM and WBFM demodulation including stereo, RDS, and subchannels
+- **Digital modulation** — QPSK simulation, constellation diagrams, carrier and timing synchronization
+- **ADS-B decoding** — extracting flight data from aircraft transponder signals
+
+## Course Topics
+
+<CardGrid>
+  <Card title="Introduction to Communication Systems & SDR" icon="setting">
+    - Overview of communication systems
+    - Software Defined Radio (SDR) concepts and architecture
+    - GNU Radio fundamentals: blocks, data types, scheduler, and flowgraph creation
+  </Card>
+  <Card title="DSP Fundamentals I — Sampling & Filtering" icon="bars">
+    - Sampling theorem, aliasing, and the Nyquist criterion
+    - Digital filter design: types, cutoff frequency, taps, and transition bandwidth
+    - Practical filtering examples in GNU Radio
+  </Card>
+  <Card title="DSP Fundamentals II — Multirate Processing & Audio" icon="codePen">
+    - Decimation and interpolation
+    - Multirate signal processing concepts
+    - Digital audio processing examples: stereo sound and DTMF tone generation
+  </Card>
+  <Card title="SDR Hardware with GNU Radio" icon="laptop">
+    - RTL-SDR architecture and interface
+    - Connecting and configuring RTL-SDR in GNU Radio
+    - Spectrum monitoring and signal discovery
+  </Card>
+  <Card title="NBFM Demodulation" icon="forward-slash">
+    - Narrowband FM demodulation with GNU Radio
+    - VHF band characteristics and FM repeaters
+    - CTCSS tones and squelch operation
+  </Card>
+  <Card title="WBFM Demodulation" icon="star">
+    - Wideband FM demodulation: mono and stereo
+    - Pilot tone detection and stereo decoding
+    - RDS (Radio Data System) subcarrier and data extraction
+  </Card>
+  <Card title="Digital Communications & QPSK" icon="puzzle">
+    - Introduction to digital modulation
+    - QPSK simulation in a noisy channel environment
+    - Carrier synchronization and sampling time recovery
+  </Card>
+  <Card title="ADS-B Signal Decoding" icon="rocket">
+    - ADS-B protocol overview and signal structure
+    - Preamble detection and Manchester decoding
+    - Extracting flight data: aircraft ID, altitude, position, and speed
+  </Card>
+  <Card title="Capture The Signal (CTS)" icon="magnifier">
+    - Live signal hunting session
+    - Identifying unknown signals in the RF spectrum
+    - Applying course skills to decode real-world transmissions
+  </Card>
+</CardGrid>
+
+## Target Audience
+
+This course is designed for engineers, professionals, students, and academics interested in signal processing or wireless communications. Whether you are new to the field or an experienced DSP engineer looking for a fresh, practical perspective — this course offers immediate, applicable value.
+
+## Course Format & Materials
+
+All hardware (RTL-SDR) is provided. Materials include:
+
+- GNU Radio flowgraphs
+- Slides and walkthrough examples
+- IQ recordings
+- Capture The Signal (CTS) session
+
+## References
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)
