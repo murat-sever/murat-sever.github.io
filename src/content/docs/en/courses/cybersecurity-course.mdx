@@ -1,0 +1,102 @@
+---
+title: Practical Cybersecurity Training in RF and SDR Exploitation
+description: A hands-on course on RF cybersecurity using Software Defined Radio
+---
+
+import { Card, CardGrid, Badge, Aside } from '@astrojs/starlight/components';
+
+The electromagnetic spectrum represents a frequently neglected attack vector in modern defense strategies. This training equips you with fundamental theory and practical expertise to analyze RF signals, construct custom SDR toolchains, and execute real-world exploitation and defense tactics.
+
+<Aside type="tip">
+  No prior RF or SDR experience needed. Basic computer knowledge and general Python familiarity are sufficient to get started.
+</Aside>
+
+## Course Highlights
+
+<CardGrid>
+  <Card title="Interactive Laboratory Sessions" icon="radio">
+    Work with real-world signals using active hardware
+  </Card>
+  <Card title="Develop Practical Expertise" icon="laptop">
+Develop practical expertise in signal analysis, GNU Radio workflows, and RF transmission
+  </Card>
+  <Card title="Hands-On Format" icon="puzzle">
+    Live demonstrations of tools and hardware
+  </Card>
+  <Card title="Capstone Project" icon="calendar">
+    Validate your technical proficiency through an applied replay attack capstone project
+  </Card>
+</CardGrid>
+
+## What You Will Learn
+
+By the end of this course, attendees will have a solid intuitive understanding of:
+
+- Core RF principles, digital modulation techniques, and SDR architecture design
+- Hands-on operation of SDR hardware to capture, process, and demodulate signals
+- Spectrum monitoring, signal scanning, and RF anomaly detection
+- Constructing custom DSP pipelines using GNU Radio
+- Practical RF transmission mechanics and cyber attack methodologies
+- Executing a comprehensive capstone project to replay attack on RF remote using SDR. 
+
+
+## Course Topics
+
+<CardGrid>
+  <Card title="Wireless Security Fundamentals & Replay Attacks" icon="warning">
+    - Introduction to RF replay attacks and their real-world implications
+    - ISM bands: unlicensed spectrum and common target devices
+    - Signal search strategies using wide RF bandwidth scanning
+    - Hardware overview: HackRF, RTL-SDR, and Flipper Zero
+  </Card>
+  <Card title="Signal Capture & Verification with GNU Radio" icon="setting">
+    - Building GNU Radio flowgraphs for spectrum monitoring
+    - Saving raw IQ waveforms to file (cf32, cs8, dat formats)
+    - Verifying captures: throttle block, QT GUI Frequency Sink
+    - Understanding DC spikes and mirror images as SDR artifacts
+  </Card>
+  <Card title="Simple Replay Attack Methods" icon="forward-slash">
+    - GNU Radio-based capture and retransmission flowgraphs
+    - Improving replay quality with digital gain and bandpass filtering
+    - Command-line replay using `hackrf_transfer` utility
+    - IQ file format compatibility between tools (float vs. signed 8-bit)
+    - Sub-GHz replay with Flipper Zero
+  </Card>
+  <Card title="Signal Analysis & Decoding Tools" icon="magnifier">
+    - **Inspectrum**: spectrogram view, amplitude plot, thresholding, baud rate measurement, bit extraction
+    - **rtl_433**: automatic protocol recognition for ISM-band devices
+    - **URH**: spectrum scanning, demodulation, protocol analysis, and retransmission
+    - **CyberChef**: binary-to-hex conversion and bit pattern analysis
+  </Card>
+  <Card title="On-Off Keying (OOK) Modulation" icon="bars">
+    - OOK signal characteristics and visual identification
+    - Preamble structure, symbol timing, and bit encoding schemes
+    - Clock recovery from demodulated waveforms
+  </Card>
+  <Card title="Advanced Replay: Signal Synthesis with GNU Radio" icon="rocket">
+    - OOK demodulation and threshold-based bit recovery
+    - Clock recovery and symbol synchronization (SymbolSync block)
+    - Bit extraction via ZMQ messaging between GNU Radio and Python
+    - Synthesizing a clean RF waveform from decoded bits — no captured noise
+  </Card>
+</CardGrid>
+
+## Hands-On Capstone Exercise
+Participants will apply course methodologies to capture, analyze, reverse engineer, and exploit an RF remote in a controlled environment. 
+
+## Target Audience
+This course is designed for engineers, professionals, students, and academics interested in signal processing or wireless communications. Whether you are new to the field or an experienced DSP engineer looking for a fresh, practical perspective — this course offers immediate, applicable value.
+
+## Course Format & Materials
+
+All hardware (HackRF One) is provided. Materials include:
+
+- Jupyter Notebooks
+- GNU Radio flowgraphs
+- Slides and walkthrough examples
+- IQ recordings
+
+## References
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)

@@ -1,0 +1,104 @@
+---
+title: YTR Uygulamalı Pratik Siber Güvenlik Eğitimi
+description: Yazılım Tabanlı Radyo kullanarak RF siber güvenliği üzerine uygulamalı bir eğitim
+---
+
+import { Card, CardGrid, Badge, Aside } from '@astrojs/starlight/components';
+
+Elektromanyetik spektrum, modern savunma stratejilerinde sıklıkla göz ardı edilen bir saldırı yüzeyidir. Bu eğitim, RF sinyallerini analiz etmek, YTR uygulamaları oluşturmak ve pratik saldırı tekniklerini uygulamak için ihtiyacınız olan temel teoriyi ve pratik uzmanlığı sağlar.
+
+<Aside type="tip">
+  Önceden önceden RF veya YTR deneyimi gerektirmez. Başlamak için temel bilgisayar kullanımı ve genel Python aşinalığı yeterlidir.
+</Aside>
+
+## Eğitim Öne Çıkanlar
+
+<CardGrid>
+  <Card title="Etkileşimli Laboratuvar Oturumları" icon="radio">
+	Gerçek donanım ve gerçek dünya sinyalleriyle interaktif laboratuvar çalışmaları
+
+  </Card>
+  <Card title="Pratik Uzmanlık Geliştirin" icon="laptop">
+    Sinyal analizi, GNU Radio iş akışları ve RF iletimi konularında pratik uzmanlık kazanın
+  </Card>
+  <Card title="Uygulamalı Format" icon="puzzle">
+    Karıştırma (jamming), geri oynatım (replay), aldatma (spoofing) ve gelişmiş RF saldırı metodolojilerini öğrenin
+  </Card>
+  <Card title="Bitirme Projesi" icon="calendar">
+Becerilerinizi uygulamalı bir RF geri oynatım saldırısı bitirme projesi ile doğrulayın
+  </Card>
+</CardGrid>
+
+## Neler Öğreneceksiniz
+
+Bu eğitimin sonunda katılımcılar aşağıdaki konularda sağlam bir kavrayışa sahip olacaktır:
+
+- Temel RF prensipleri, sayısal modülasyon teknikleri ve YTR mimari tasarımı
+- Sinyalleri yakalamak, işlemek ve demodüle etmek için YTR donanımının uygulamalı kullanımı
+- Spektrum izleme, sinyal tarama ve RF anomali tespiti
+- GNU Radio kullanarak özel SSİ (Sayısal Sinyal İşleme) zincirleri oluşturma
+- Pratik RF iletim mekanizmaları ve siber saldırı metodolojileri
+- YTR kullanarak RF uzaktan kumandayı hedef alan geri oynatım saldırısı düzenleme
+
+## Eğitim Konuları
+
+<CardGrid>
+  <Card title="Kablosuz Güvenlik Temelleri ve Geri Oynatım Saldırıları" icon="warning">
+    - RF geri oynatım saldırılarına giriş ve gerçek dünya sonuçları
+    - ISM bantları: lisanssız spektrum ve yaygın hedef cihazlar
+    - Geniş RF bant genişliği tarama ile sinyal arama stratejileri
+    - Donanıma genel bakış: HackRF, RTL-SDR ve Flipper Zero
+  </Card>
+  <Card title="GNU Radio ile Sinyal Yakalama ve Doğrulama" icon="setting">
+    - Spektrum izleme için GNU Radio akış grafiği oluşturma
+    - Ham IQ dalga formlarını dosyaya kaydetme (cf32, cs8, dat formatları)
+    - Kayıtları doğrulama: kısıtlayıcı blok ve QT GUI Frekans Havuzu
+    - DC bileşeni ve ayna görüntülerini SDR yapay unsurları olarak anlama
+  </Card>
+  <Card title="Basit Geri Oynatım Saldırısı Yöntemleri" icon="forward-slash">
+    - GNU Radio tabanlı yakalama ve yeniden iletim akış grafikleri
+    - Sayısal kazanç ve bant geçirgen filtre ile geri oynatım kalitesini iyileştirme
+    - `hackrf_transfer` yardımcı programı ile komut satırından geri oynatım saldırısı
+    - Araçlar arası IQ dosya formatı uyumluluğu (float - işaretli 8-bit)
+    - Flipper Zero ile Sub-GHz geri oynatım saldırısı
+  </Card>
+  <Card title="Sinyal Analizi ve Kod Çözme Araçları" icon="magnifier">
+    - **Inspectrum**: spektrogram görünümü, genlik grafiği, eşikleme, sembol hızı ölçümü, bit çıkarımı
+    - **rtl_433**: ISM bandı cihazlar için otomatik protokol tanıma
+    - **URH**: spektrum tarama, demodülasyon, protokol analizi ve yeniden iletim
+    - **CyberChef**: ikili-onaltılık dönüşüm ve bit örüntüsü analizi
+  </Card>
+  <Card title="Açma-Kapama Anahtarlama (OOK) Modülasyonu" icon="bars">
+    - OOK sinyal özellikleri ve görsel tanımlama
+    - Önsöz yapısı, sembol zamanlaması ve bit kodlama şemaları
+    - Demodüle edilmiş dalga formlarından saat kurtarma
+  </Card>
+  <Card title="Gelişmiş Geri Oynatım Saldırısı: GNU Radio ile Sinyal Sentezi" icon="rocket">
+    - OOK demodülasyonu ve eşik tabanlı bit kurtarma
+    - Saat kurtarma ve sembol senkronizasyonu (SymbolSync bloğu)
+    - ZMQ mesajlaşma ile GNU Radio ve Python arasında bit çıkarımı
+    - Çözülen bitlerden temiz RF dalga formu sentezleme — kayıtlı gürültü yok
+  </Card>
+</CardGrid>
+
+## Uygulamalı Bitirme Projesi
+Katılımcılar, eğitim boyunca öğrendikleri araç ve teknikleri kullanarak bir RF kumanda cihazını analiz edecek, sinyallerini yakalayacak, tersine mühendislik uygulayacak ve cihaza hedef alan bir geri oynatım saldırısı düzenleyeceklerdir. 
+
+
+## Hedef Kitle
+
+Bu eğitim; sinyal işleme veya kablosuz iletişime ilgi duyan mühendisler, profesyoneller, öğrenciler ve akademisyenler için tasarlanmıştır. Alana yeni başlıyor olun ya da taze ve pratik bir bakış açısı arayan deneyimli bir DSP mühendisi olun — bu eğitim anında uygulanabilir değer sunmaktadır.
+
+## Eğitim Formatı ve Materyaller
+
+Tüm donanım (HackRF One) sağlanmaktadır. Materyaller şunları içermektedir:
+
+- Jupyter Notebook'lar
+- GNU Radio akış grafikleri
+- Slaytlar ve adım adım örnekler
+- IQ kayıtları
+
+## Kaynaklar
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)
