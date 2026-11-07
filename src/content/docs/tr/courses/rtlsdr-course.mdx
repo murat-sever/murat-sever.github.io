@@ -1,0 +1,104 @@
+---
+title: RTL-SDR ile Radyo Frekansı Dünyasına Giriş
+description: RTL-SDR ve açık kaynak yazılım araçları kullanılarak kablosuz haberleşme üzerine uygulamalı bir eğitim.
+---
+
+import { Card, CardGrid, Badge, Aside } from '@astrojs/starlight/components';
+
+Kablosuz haberleşmeyi öğrenmek hiç bu kadar kolay ve eğlenceli olmamıştı! Bu eğitim, haberleşme sistemlerini Yazılım Tabanlı Radyolar (YTR) aracılığıyla deneyimleyerek öğretmeyi hedeflemektedir. Eğitimde canlı radyo frekansı sinyalleri açık kaynak yazılım araçları üzerinden analiz edilerek kod çözme örnekleri sunulmaktadır.
+
+<Aside type="tip">
+  Önceden RF deneyimine gerek yoktur. Başlamak için temel bilgisayar bilgisi ve genel Python aşinalığı yeterlidir.
+</Aside>
+
+## Eğitimin Öne Çıkan Özellikleri
+
+<CardGrid>
+  <Card title="Gerçek Dünya Sinyalleri" icon="radio">
+    Canlı sinyallerle çalışın: ticari FM, hava bandı, ISM, mobil haberleşme ve uçaklardan ADS-B transponder sinyalleri.
+  </Card>
+  <Card title="Açık Kaynak Araçlar" icon="laptop">
+    Tüm işlemler GNU Radio, SDR++ ve SDR tabanlı kod çözme araçları dahil açık kaynak yazılımlar kullanılarak gerçekleştirilir.
+  </Card>
+  <Card title="Uygulamalı Format" icon="puzzle">
+    Canlı gösterimler, gerçek dünya kod çözme örnekleri ve Sinyal Yakalama Avı (CTS) oturumları.
+  </Card>
+  <Card title="Yeni Başlayanlara Uygun" icon="star">
+    Daha önce RF veya YTR deneyimi olmayan katılımcılar için baştan tasarlanmıştır.
+  </Card>
+</CardGrid>
+
+## Neler Öğreneceksiniz
+
+Bu eğitimin sonunda katılımcılar aşağıdaki konularda sağlam bir kavrayışa sahip olacaktır:
+
+- **RF temelleri** — frekans, bant genişliği, dalga boyu, RF spektrum ve modülasyon
+- **RTL-SDR donanımı** — mimari, temel parametreler ve kurulum
+- **Spektrum izleme** — ticari FM, hava bandı, ISM, mobil ağlar ve ADS-B gözlemleme
+- **Analog modülasyon** — gerçek dünya örnekleriyle NBFM ve WBFM kip çözme
+- **ADS-B kod çözme** — uçak transponder sinyallerinden uçuş verisi çıkarımı
+- **GNU Radio** — akış grafiği tabanlı sinyal işlemeye giriş
+
+## Eğitim Konuları
+
+<CardGrid>
+  <Card title="Haberleşme Sistemleri Temelleri" icon="setting">
+    - Frekans, bant genişliği ve dalga boyu
+    - RF spektrumu ve bantları
+    - Modülasyon kavramları: sinyaller neden ve nasıl modüle edilir
+  </Card>
+  <Card title="RTL-SDR Temel Bilgileri" icon="bars">
+    - RTL-SDR mimarisi ve temel parametreler
+    - Donanım kurulumu ve sürücü yüklenmesi
+    - RTL-SDR'nin açık kaynak yazılım araçlarına bağlanması
+  </Card>
+  <Card title="Radyo Frekansında Merhaba Dünya" icon="codePen">
+    - RF spektrumuyla ilk temas
+    - İlk canlı sinyalin alınması ve görselleştirilmesi
+    - Şelale (waterfall) ekranı ve spektrum analizörünü anlama
+  </Card>
+  <Card title="Elektromanyetik Spektrumun İzlenmesi" icon="magnifier">
+    - Ticari FM yayın izleme
+    - Hava bandı (havacılık ses iletişimi)
+    - ISM bandı ve mobil haberleşmeye genel bakış
+    - ADS-B uçak transponder sinyalleri
+  </Card>
+  <Card title="NBFM ve WBFM Kip Çözme" icon="forward-slash">
+    - Dar bant FM: VHF bandı ve gerçek dünya örnekleri
+    - Geniş bant FM: mono, stereo ve RDS kod çözme
+    - NBFM ve WBFM sinyallerinin pratik karşılaştırması
+  </Card>
+  <Card title="ADS-B Sinyal Kod Çözme" icon="rocket">
+    - ADS-B protokolüne genel bakış ve sinyal yapısı
+    - Uçak kimliği, irtifa, konum ve hız verilerinin çözümlenmesi
+    - Canlı uçuş verilerinin harita üzerinde görselleştirilmesi
+  </Card>
+  <Card title="GNU Radio'ya Giriş" icon="laptop">
+    - GNU Radio nedir ve neden kullanılır?
+    - Akış grafiği temelleri: kaynak, havuz ve işleme blokları
+    - Basit bir alıcı akış grafiği oluşturma
+  </Card>
+  <Card title="Sinyal Yakalama Avı (CTS)" icon="puzzle">
+    - Canlı sinyal avcılığı oturumları
+    - RF spektrumunda bilinmeyen sinyallerin tanımlanması
+    - Gerçek dünya iletimlerini çözmek için kurs becerilerinin uygulanması
+  </Card>
+</CardGrid>
+
+## Hedef Kitle
+
+Bu eğitim; kablosuz haberleşmeye ve RF spektrumuna merak duyan mühendisler, profesyoneller, öğrenciler ve akademisyenler için tasarlanmıştır. Önceden RF veya SDR deneyimi gerekmez — yalnızca öğrenme isteği ve radyo dalgalarının görünmez dünyasını keşfetme merakı yeterlidir.
+
+## Eğitim Formatı ve Materyaller
+
+Tüm donanım (RTL-SDR) sağlanmaktadır. Materyaller şunları içermektedir:
+
+- Slaytlar ve adım adım örnekler
+- GNU Radio akış grafikleri
+- IQ kayıtları
+- Sinyal Yakalama Avı (CTS) oturumları
+
+## Kaynaklar
+
+1. *Software-Defined Radio for Engineers* — Collins, Getz, Pu, Wyglinski (2018), ISBN 978-1-63081-457-1
+2. *Software Defined Radio with Zynq® UltraScale+™ RFSoC* — [rfsocbook.com](https://www.rfsocbook.com/)
